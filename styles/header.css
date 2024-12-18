@@ -1,0 +1,49 @@
+header {
+  padding-block: 32px;
+}
+#profile {
+  & h1 {
+    padding-block: 8px;
+    font: var(--text-lg);
+    color: var(--text-color-primary);
+  }
+  & img {
+    width: 176px;
+    height: 176px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  & > div {
+    max-width: 384px;
+  }
+}
+
+#info {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 280px;
+  margin-top: 2rem;
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media (width>=80rem) {
+  header {
+    & .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & #profile {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
